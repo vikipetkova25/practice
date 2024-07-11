@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortfolioPetkova</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button id="theme-toggle" class="btn">Dark Mode</button>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's me</h3>
+            <h1>Victoria Petkova</h1>
+            <h3>And I'm a <span>Student</span></h3>
+            <p>Ready to learn more and improve!</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=100045092866889" target="_blank"><i class="bx bxl-facebook bx-lg"></i></a>
+                <a href="https://twitter.com/VictoriqPe17651?ref_src=twsrc%5Etfw" target="_blank"><i class="bx bxl-twitter bx-lg"></i></a>
+                <a href="https://www.instagram.com/_.vikito.__/" target="_blank"><i class="bx bxl-instagram-alt bx-lg"></i></a>
+                <a href="mailto:your-Victoriqp65@gmail.com"><i class="bx bxl-gmail bx-lg"></i></a>
+            </div>
+        </div>
+        <div class="home-img"> 
+            <img src="cute.png" alt="Victoria's image" width="500" height="500" />
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2 class="heading">About <span style="color: rgb(0, 242, 255);">Me</span></h2>
+                <p>Hello! I'm Victoria Petkova, a dedicated student with a passion for learning and growth. I believe in the power of education to transform lives and create opportunities. My journey is fueled by curiosity and a desire to make a positive impact in the world.</p>
+                <div class="more-content" id="moreContent" style="display: none;">
+                    <p> I currently reside in Varna, Bulgaria, and I'm a 16-year-old student at PGKMKS 'Acad. Blagovest Sendov'. With a strong passion for technology and a knack for innovative problem-solving, I like to devise creative solutions. Outside of academics, I enjoy honing my skills in drawing and find inspiration through music. I'm eager to connect and collaborate with like-minded individuals who share my enthusiasm for pushing the boundaries of technology and creativity. Feel free to reach out to me on social media!</p>
+                </div>
+                <button id="readMoreBtn" class="btn">Read More</button>
+            </div>
+            <div class="about-img">
+                <img src="vikisnimka.jpg" alt="Victoria Petkova" width="450" height="550">
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Latest <span style="color: rgb(0,242,255);">Projects</span></h2>
+        <div class="projects-container">
+            <div class="project-box">
+                <img src="staq.png" alt="Room design" width="700" height="700">
+                <div class="project-info">
+                    <h4>Room design</h4>
+                    <p>Coffee shop</p>
+                    <a href="#" class="project-link"><i class='bx bx-caret-up'></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="vikibl.png" alt="Room design 2" width="600" height="500">
+                <div class="project-info white-text">
+                    <h4>Room design 2</h4>
+                    <p>Kid's room</p>
+                    <a href="#" class="project-link"><i class='bx bx-caret-up'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form id="contact-form">
+            <div class="input-box">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+                <div class="error-message" id="fullNameError">Full Name cannot be blank.</div>
+            </div>
+            <div class="input-box">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error-message" id="emailError">Email Address cannot be blank.</div>
+            </div>
+            <div class="input-box">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile" required>
+                <div class="error-message" id="mobileError">Mobile Number cannot be blank.</div>
+            </div>
+            <div class="input-box">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+                <div class="error-message" id="subjectError">Subject cannot be blank.</div>
+            </div>
+            <div class="input-box">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <div class="error-message" id="messageError">Message cannot be blank.</div>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
